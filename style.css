@@ -1,0 +1,119 @@
+.image-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-card {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: black solid 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.download-btn:hover {
+    background-color: #ffdca7;
+    color: black
+}
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.load-more-btn:hover {
+    background-color: #218838;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Download button inside lightbox */
+/* Lightbox Styling */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* This makes the elements stack vertically */
+    display: none;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+    margin-bottom: 10px; /* Adds spacing between image and button */
+}
+
+#downloadLightbox {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
